@@ -3,6 +3,7 @@ package com.example.notepaging3.retrofit.service
 import com.example.notepaging3.beans.github.RepoResponse
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.http.GET
 import retrofit2.http.Query
 
 /**
@@ -28,5 +29,6 @@ interface GitHubService {
      * @param page     请求哪一页（如请求第一页）
      * @param perPage  请求页对应的数据（如请求第一页，请求5条数据）
      * */
+    @GET("search/repositories?sort=stars&q=Android")
     suspend fun searchRepos(@Query("page") page: Int, @Query("per_page") perPage: Int): RepoResponse
 }
