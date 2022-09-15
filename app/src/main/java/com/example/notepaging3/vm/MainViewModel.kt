@@ -5,7 +5,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import com.example.notepaging3.beans.github.Repo
-import com.example.notepaging.repository.Repository
+import com.example.notepaging3.repository.Repository
 import kotlinx.coroutines.flow.Flow
 
 /**
