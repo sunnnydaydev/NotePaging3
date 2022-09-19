@@ -366,5 +366,3 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
-###### 4、添加上拉加载功能
-
